@@ -1,0 +1,7 @@
+      - name: Rename APK
+        run: cp android/app/build/outputs/apk/debug/*.apk cod3a-shady.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cod3a-shady
+          path: cod3a-shady.apk
